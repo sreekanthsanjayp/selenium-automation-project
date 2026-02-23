@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd" >
+
+<suite name="ActiTimeSuite" parallel="classes" thread-count="4">
+
+    <!-- Test block for Customer tasks -->
+    <test name="CustomerTests">
+        <classes>
+            
+            <class name="com.krn.actitime.tasks.CreateCustomer"/>
+            <class name="com.krn.actitime.tasks.DeleteCustomer"/>
+        </classes>
+    </test>
+
+    <!-- Test block for User tasks -->
+    <test name="UserTests">
+        <classes>
+            
+            <class name="com.krn.actitime.users.CreateUser"/>
+            <class name="com.krn.actitime.users.DeleteUser"/>
+        </classes>
+    </test>
+
+</suite>
